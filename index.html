@@ -9,14 +9,27 @@
 <body>
   <div id="converter">
     <h1>Ancient Unit Converter</h1>
-    <label for="input-value">Enter Ancient Unit Value:</label>
+    <label for="input-value">Enter Ancient Unit Value (Hebrew Old Testament, Greek New Testament):</label>
     <input type="number" id="input-value" placeholder="Enter a number">
     <label for="input-unit">Select Ancient Unit:</label>
     <select id="input-unit">
       <!-- Ancient length units -->
-      <option value="cubit">Cubit</option>
+      <option value="cubit">אמה (cubit, codo)</option>
+      <option value="long_cubit">אמה ארוך (long cubit, codo largo)</option>
+      <option value="finger">אצבע (finger, dedo)</option>
+      <option value="cubit_gmd">גמד (cubit, codo) (alternative name)</option>
+      <option value="span">זרת (Span, palmo)</option>
+      <option value="handbreadth">טפח (handbreadth, palmo menor)</option>
+      <option value="reed">קנה (reed, caña)</option>      
+      
+      <option value="shabbath_day">οδοσ σαββατου (sabbath's day walk, camino de un día de reposo)</option>
+      <option value="fathom">οργυια (fathom, braza)</option>
+      <option value="nt_cubit">πηχυς (cubit, codo)</option>
+      <option value="stade">σταδιος (stade, estadio)</option>      
+      <option value="roman_mile">μιλιον (roman mile, milla romana)</option>
+      
+      <!-- Ancient weight units -->
       <option value="talent">Talent</option>
-      <option value="handbreadth">Handbreadth</option>
     </select>
     </select>
     <button onclick="convert()">Convert</button>

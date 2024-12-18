@@ -1,0 +1,48 @@
+testament,unit_type,unit_name,formula,alias_english,alias_spanish
+old,length_distance,אמה,45 * cm,cubit,codo
+old,length_distance,אצבע,אמה / 24,finger,dedo
+old,length_distance,טפח,אמה / 6,handbreadth,palmo_menor
+old,length_distance,זרת,אמה / 2,span,palmo
+old,length_distance,אמה_ארוך,7 * טפח,long_cubit,codo_largo
+old,length_distance,קנה,אמה_ארוך * 6,reed,cana
+old,length_distance,גמד,אמה,,
+new,length_distance,πηχυς,אמה_ארוך,nt_cubit,codo_nt
+new,length_distance,οργυια,1.8 * metres,fathom,braza
+new,length_distance,σταδιος,185 * metres,stade,estadio
+new,length_distance,οδοσ_σαββατου,200 * πηχυς,shabbaths_day_walk,camino_de_un_dia_de_reposo
+new,length_distance,μιλιον,1497 * metres,roman_mile,milla_romana
+old,capacity,איפה_א,litres * 10,ephah_preexilic,efa_preexilio
+old,capacity,בת_א,litres * 22,bath_preexilic,bato_preexilio
+old,capacity,איפה_ב,litres * 39,ephah_postexilic,efa_postexilio
+old,capacity,לג,בת_א / 72,log,
+old,capacity,קב,איפה_א / 18,kav,
+old,capacity,עומר,איפה_א / 10,omer,
+old,capacity,עשרון,עומר,issaron,isaron
+old,capacity,הין_א,בת_א / 6,hin_preexilic,hin_preexilio
+old,capacity,בת_ב,איפה_ב,bath_postexilic,bato_postexilio
+old,capacity,הין_ב,בת_ב / 6,hin_postexilic,hin_postexilio
+old,capacity,סאה_א,איפה_א / 3,seah_preexilic,seah_preexilio
+old,capacity,סאה_ב,איפה_ב / 3,seah_postexilic,seah_postexilio
+old,capacity,בת_בת,litres * 39,double_bath,doble_bato
+old,capacity,חמר_א_א,10 * איפה_א,homer_preexilic_dry,homer_preexilio_seco
+old,capacity,חמר_א_ב,10 * בת_א,homer_preexilic_liquid,homer_preexilio_liquido
+old,capacity,חמר_ב,10 * איפה_ב,homer_postexilic,homer_postexilio
+old,capacity,כר_א_א,חמר_א_א,kor_preexilic_dry,coro_preexilio_seco
+old,capacity,כר_א_ב,חמר_א_ב,kor_preexilic_liquid,coro_preexilio_liquido
+old,capacity,כר_ב,חמר_ב,kor_postexilic,coro_postexilio
+old,capacity,לתך,חמר_א_א / 2,letek,
+new,capacity,σατον,סאה_ב,new_testament_seah,seah_nuevo_testamento
+new,capacity,βατος,בת_ב,new_testament_bath,bato_nuevo_testamento
+new,capacity,κορος,כר_ב,new_testament_kor,coro_nuevo_testamento
+new,capacity,χοινιξ,litres * 1,choinix,
+new,capacity,μετρητης,βατος,metritis,
+both,weight,kilos_of_stuff_from_capacity,litres * (3/2),,
+both,weight,grams_of_stuff_from_capacity,kilos_of_stuff_from_capacity  / 1000,,
+old,weight,שקל,grams * 12,shekel,siclo
+old,weight,גרה,שקל / 20,gerah,gera
+old,weight,בקע,שקל / 2,beka,
+old,weight,מנה,שקל * 60,mina,
+old,weight,ככר,שקל * 3000,talent,talento
+old,weight,פים,שקל * 0.66,pim,
+new,weight,λιτρα,grams * 327,litra,
+new,weight,ταλαντιαιος,kilograms * 40,revelation_talent,talento_apocalipsis
