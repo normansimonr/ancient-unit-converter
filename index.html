@@ -10,17 +10,14 @@
   <div id="converter">
     <h1>Ancient Unit Converter</h1>
     <label for="input-value">Enter Ancient Unit Value:</label>
-    <input type="number" id="input-value" placeholder="Enter value">
+    <input type="number" id="input-value" placeholder="Enter a number">
     <label for="input-unit">Select Ancient Unit:</label>
     <select id="input-unit">
       <!-- Ancient length units -->
-      <option value="cubit">Cubit/codo (אמה)</option>
-      <option value="finger">Finger/dedo (אצבע)</option>
-      <option value="handbreadth">Handbreadth/palmo menor (טפח)</option>
-      
-      
-      <!-- Ancient weight units -->
-      <option value="talent">Talent (Ancient Hebrew)</option>
+      <option value="cubit">Cubit</option>
+      <option value="talent">Talent</option>
+      <option value="handbreadth">Handbreadth</option>
+    </select>
     </select>
     <button onclick="convert()">Convert</button>
     <div id="result"></div>
