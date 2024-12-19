@@ -1,15 +1,27 @@
 /* General body styles */
 body {
-  font-family: 'Bona Nova', serif;
+  font-family: 'Kantumruy Pro', serif;
+  font-size: 0.75em;
+  color: #1f1e21;
   margin: 0;
   padding: 0;
-  background: repeating-linear-gradient(
-    45deg,
-    yellow 0,
-    yellow 20px,
-    purple 20px,
-    purple 40px
-  );
+  background-color: #202029;
+}
+
+h1 {
+  font-family: 'Julius Sans One', serif;
+  font-size: 2.1em;
+  font-weight: bold;
+  color: #400554;
+  margin: 10px 0;
+}
+
+h2 {
+  font-family: 'Julius Sans One', serif;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #400554;
+  margin: 10px 0;
 }
 
 /* Layout grid for panels */
@@ -46,20 +58,20 @@ body {
   align-items: center; /* Centre the inner-box vertically */
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.0); /* Semi-transparent background */
-  border: 1px solid rgba(0, 0, 0, 0.2); /* Subtle border */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  border: 0px solid rgba(0, 0, 0, 0.2); /* Subtle border */
+  --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
   --backdrop-filter: blur(5px); /* Optional blur for frosted glass effect */
 }
 
 /* Inner box styles */
 .inner-box {
-  border: 2px solid rgba(0, 0, 0, 0.3); /* Subtle border */
+  border: 5px solid rgba(255, 255, 255, 0.3); /* Subtle border */
   border-radius: 10px; /* Rounded corners */
-  background-color: #f5f5dc; /* Bone-like background */
+  background-color: #faf9e8;
   padding: 20px; /* Padding inside the box */
   margin: auto; /* Automatically centre */
   width: 80%; /* Adjust width to fit within the parent */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
   text-align: center; /* Centre-align text within the box */
 }
 
@@ -85,8 +97,12 @@ label, input, select, button {
   margin: 10px auto;
 }
 
+label {
+  font-style:normal;  
+}
+
 input, select {
-  font-family: 'Bona Nova', serif;
+  font-family: 'Open Sans', serif;
   font-size: 1em;
   padding: 5px;
   border: 1px solid #ccc;
@@ -96,16 +112,19 @@ input, select {
 }
 
 button {
+  font-family: 'Julius Sans One', serif;
+  font-weight: bold;
   padding: 10px 20px;
-  background-color: purple;
-  color: white;
+  background-color: #400554;
+  color: #faf9e8;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #007BFF;
+  background-color: #f2d233;
+  color: #400554;
 }
 
 /* Result display styles */
