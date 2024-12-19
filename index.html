@@ -16,7 +16,8 @@
     <div class="inner-box">
       <h1>Ancient Unit Converter</h1>
       <p>This applet allows you to convert ancient biblical units to their modern equivalents with ease.</p>
-      <p>The calculations are based on the equivalence tables created by Peter Schmidt (2014) in <a href="https://test-silorg.sil.org/resources/archives/56085"><i>Biblical Measures and their Translation: Notes on Translating Biblical Units of Length, Area, Capacity, Weight, Money and Time</i></a> (SIL Electronic Working Papers 112).</p>
+      <p>The calculations are based on the equivalence tables created by Peter Schmidt in <a href="https://test-silorg.sil.org/resources/archives/56085"><i>Biblical Measures and their Translation: Notes on Translating Biblical Units of Length, Area, Capacity, Weight, Money and Time</i></a> (SIL Electronic Working Papers 112, 2014).</p>
+      <p>Check out this applet's code on <a href="https://github.com/normansimonr/ancient-unit-converter">GitHub</a>.</p>
     </div>
   </div>
 
@@ -49,25 +50,25 @@
           <!-- Ancient capacity units -->
           <optgroup label="Capacity (OT)">
             <option value="pre-exilic ephah">איפה — pre-exilic ephah, efa preexílica</option>
-            <option value="pre-exilic bath">בת — pre-exilic bath, bat preexílico</option>
             <option value="post-exilic ephah">איפה — post-exilic ephah, efa postexílica</option>
-            <option value="log">לג — log</option>
-            <option value="kav">קב — kav</option>
-            <option value="omer">עומר — omer</option>
-            <option value="issaron">עשרון — issaron</option>
-            <option value="pre-exilic hin">הין — pre-exilic hin, hin preexílico</option>
+            <option value="pre-exilic bath">בת — pre-exilic bath, bat preexílico</option>
             <option value="post-exilic bath">בת — post-exilic bath, bat postexílico</option>
-            <option value="post-exilic hin">הין — post-exilic hin, hin postexílico</option>
-            <option value="pre-exilic seah">סאה — pre-exilic seah, seah preexílica</option>
-            <option value="post-exilic seah">סאה — post-exilic seah, seah postexílica</option>
             <option value="double bath"> בת בת — double bath, bat doble</option>
+            <option value="pre-exilic hin">הין — pre-exilic hin, hin preexílico</option>
+            <option value="post-exilic hin">הין — post-exilic hin, hin postexílico</option>
             <option value="pre-exilic dry homer">חמר — pre-exilic dry homer, homer preexílico áridos</option>
             <option value="pre-exilic liquid homer">חמר — pre-exilic liquid homer, homer preexílico líquidos</option>
             <option value="post-exilic homer">חמר — post-exilic homer, homer postexílico</option>
             <option value="pre-exilic dry kor">כר — pre-exilic dry kor, coro preexílico áridos</option>
             <option value="pre-exilic liquid kor">כר — pre-exilic liquid kor, coro preexílico líquidos</option>
             <option value="post-exilic kor">כר — post-exilic kor, coro postexílico</option>
+            <option value="log">לג — log</option>
             <option value="letek">לתך — letek</option>
+            <option value="pre-exilic seah">סאה — pre-exilic seah, seah preexílica</option>
+            <option value="post-exilic seah">סאה — post-exilic seah, seah postexílica</option>
+            <option value="omer">עומר — omer</option>
+            <option value="issaron">עשרון — issaron</option>
+            <option value="kav">קב — kav</option>
           </optgroup>
           <optgroup label="Capacity (NT)">
             <option value="New Testament bath">βατος — New Testament bath, bat del Nuevo Testamento</option>
@@ -100,25 +101,450 @@
   <div class="panel table-panel">
     <div class="inner-box">
       <h2>Unit Equivalences</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Ancient Unit</th>
-            <th>Modern Equivalent</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Cubit</td>
-            <td>0.45 metres</td>
-          </tr>
-          <tr>
-            <td>Span</td>
-            <td>0.22 metres</td>
-          </tr>
-          <!-- Add more rows as needed -->
-        </tbody>
-      </table>
+      
+      
+      
+      
+      
+      <table><thead>
+  <tr>
+    <th>Testament</th>
+    <th>Unit type</th>
+    <th>Period</th>
+    <th>Unit name (+ identifiers)</th>
+    <th>Formula</th>
+    <th>English</th>
+    <th>Spanish</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>OLD</td>
+    <td>Length</td>
+    <td></td>
+    <td>אמה</td>
+    <td>0.45 × metres</td>
+    <td>Cubit</td>
+    <td>Codo</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Length</td>
+    <td></td>
+    <td>אצבע</td>
+    <td>אמה / 24</td>
+    <td>Finger</td>
+    <td>Dedo</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Length</td>
+    <td></td>
+    <td>טפח</td>
+    <td>אמה / 6</td>
+    <td>Handbreadth</td>
+    <td>Palmo menor</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Length</td>
+    <td></td>
+    <td>זרת</td>
+    <td>אמה / 2</td>
+    <td>Span</td>
+    <td>Palmo</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Length</td>
+    <td></td>
+    <td>אמה_ארוך</td>
+    <td>7 × טפח</td>
+    <td>Long cubit</td>
+    <td>Codo largo</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Length</td>
+    <td></td>
+    <td>קנה</td>
+    <td>אמה_ארוך × 6</td>
+    <td>Reed</td>
+    <td>Caña</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Length</td>
+    <td></td>
+    <td>גמד</td>
+    <td>אמה</td>
+    <td>Cubit (alternative name)</td>
+    <td>Codo (nombre alternativo)</td>
+  </tr>
+  <tr>
+    <td>NEW</td>
+    <td>Length</td>
+    <td></td>
+    <td>πηχυς</td>
+    <td>אמה_ארוך</td>
+    <td>New Testament cubit</td>
+    <td>Codo del Nuevo Testamento</td>
+  </tr>
+  <tr>
+    <td>NEW</td>
+    <td>Length</td>
+    <td></td>
+    <td>οργυια</td>
+    <td>1.8 × metres</td>
+    <td>Fathom</td>
+    <td>Braza</td>
+  </tr>
+  <tr>
+    <td>NEW</td>
+    <td>Length</td>
+    <td></td>
+    <td>σταδιος</td>
+    <td>185 × metres</td>
+    <td>Stade</td>
+    <td>Estadio</td>
+  </tr>
+  <tr>
+    <td>NEW</td>
+    <td>Length</td>
+    <td></td>
+    <td>οδοσ_σαββατου</td>
+    <td>200 × πηχυς</td>
+    <td>Shabbath’s day walk</td>
+    <td>Camino de un día de reposo</td>
+  </tr>
+  <tr>
+    <td>NEW</td>
+    <td>Length</td>
+    <td></td>
+    <td>μιλιον</td>
+    <td>1497 × metres</td>
+    <td>Roman_mile</td>
+    <td>Milla romana</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td>Pre-exilic</td>
+    <td>איפה_א</td>
+    <td>litres × 10</td>
+    <td>Ephah</td>
+    <td>Efa</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td>Pre-exilic</td>
+    <td>בת_א</td>
+    <td>litres × 22</td>
+    <td>Bath</td>
+    <td>Bato</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td>Post-exilic</td>
+    <td>איפה_ב</td>
+    <td>litres × 39</td>
+    <td>Ephah</td>
+    <td>Efa</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td></td>
+    <td>לג</td>
+    <td>בת_א / 72</td>
+    <td>Log</td>
+    <td>Log</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td></td>
+    <td>קב</td>
+    <td>איפה_א / 18</td>
+    <td>Kav</td>
+    <td>Kav</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td></td>
+    <td>עומר</td>
+    <td>איפה_א / 10</td>
+    <td>Omer</td>
+    <td>Omer</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td></td>
+    <td>עשרון</td>
+    <td>עומר</td>
+    <td>Issaron</td>
+    <td>Isaron</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td>Pre-exilic</td>
+    <td>הין_א</td>
+    <td>בת_א / 6</td>
+    <td>Hin</td>
+    <td>Hin</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td>Post-exilic</td>
+    <td>בת_ב</td>
+    <td>איפה_ב</td>
+    <td>Bath</td>
+    <td>Bato</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td>Post-exilic</td>
+    <td>הין_ב</td>
+    <td>בת_ב / 6</td>
+    <td>Hin</td>
+    <td>Hin</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td>Pre-exilic</td>
+    <td>סאה_א</td>
+    <td>איפה_א / 3</td>
+    <td>Seah</td>
+    <td>Seah</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td>Post-exilic</td>
+    <td>סאה_ב</td>
+    <td>איפה_ב / 3</td>
+    <td>Seah</td>
+    <td>Seah</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td></td>
+    <td>בת_בת</td>
+    <td>litres × 39</td>
+    <td>Double bath</td>
+    <td>Doble bato</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity (dry)</td>
+    <td>Pre-exilic</td>
+    <td>חמר_א_א</td>
+    <td>10 × איפה_א</td>
+    <td>Homer</td>
+    <td>Homer</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity (liquid)</td>
+    <td>Pre-exilic</td>
+    <td>חמר_א_ב</td>
+    <td>10 × בת_א</td>
+    <td>Homer</td>
+    <td>Homer</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td>Post-exilic</td>
+    <td>חמר_ב</td>
+    <td>10 × איפה_ב</td>
+    <td>Homer</td>
+    <td>Homer</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity (dry)</td>
+    <td>Pre-exilic</td>
+    <td>כר_א_א</td>
+    <td>חמר_א_א</td>
+    <td>Kor</td>
+    <td>Coro</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity (liquid)</td>
+    <td>Pre-exilic</td>
+    <td>כר_א_ב</td>
+    <td>חמר_א_ב</td>
+    <td>Kor</td>
+    <td>Coro</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td>Post-exilic</td>
+    <td>כר_ב</td>
+    <td>חמר_ב</td>
+    <td>Kor</td>
+    <td>Coro</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Capacity</td>
+    <td></td>
+    <td>לתך</td>
+    <td>חמר_א_א / 2</td>
+    <td>Letek</td>
+    <td>Letek</td>
+  </tr>
+  <tr>
+    <td>NEW</td>
+    <td>Capacity</td>
+    <td></td>
+    <td>σατον</td>
+    <td>סאה_ב</td>
+    <td>New Testament seah</td>
+    <td>Seah del Nuevo Testamento</td>
+  </tr>
+  <tr>
+    <td>NEW</td>
+    <td>Capacity</td>
+    <td></td>
+    <td>βατος</td>
+    <td>בת_ב</td>
+    <td>New Testament bath</td>
+    <td>Bato del Nuevo Testamento</td>
+  </tr>
+  <tr>
+    <td>NEW</td>
+    <td>Capacity</td>
+    <td></td>
+    <td>κορος</td>
+    <td>כר_ב</td>
+    <td>New Testament kor</td>
+    <td>Coro del Nuevo Testamento</td>
+  </tr>
+  <tr>
+    <td>NEW</td>
+    <td>Capacity</td>
+    <td></td>
+    <td>χοινιξ</td>
+    <td>litres × 1</td>
+    <td>Choinix</td>
+    <td>Choinix</td>
+  </tr>
+  <tr>
+    <td>NEW</td>
+    <td>Capacity</td>
+    <td></td>
+    <td>μετρητης</td>
+    <td>βατος</td>
+    <td>Metritis</td>
+    <td>Metritis</td>
+  </tr>
+  <tr>
+    <td>BOTH</td>
+    <td>Weight</td>
+    <td></td>
+    <td>Kilograms in one litre (grain)</td>
+    <td>litres × (3/2)</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Weight</td>
+    <td></td>
+    <td>שקל</td>
+    <td>grams × 12</td>
+    <td>Shekel</td>
+    <td>Siclo</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Weight</td>
+    <td></td>
+    <td>גרה</td>
+    <td>שקל / 20</td>
+    <td>Gerah</td>
+    <td>Gera</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Weight</td>
+    <td></td>
+    <td>בקע</td>
+    <td>שקל / 2</td>
+    <td>Beka</td>
+    <td>Beka</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Weight</td>
+    <td></td>
+    <td>מנה</td>
+    <td>שקל × 60</td>
+    <td>Mina</td>
+    <td>Mina</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Weight</td>
+    <td></td>
+    <td>ככר</td>
+    <td>שקל × 3000</td>
+    <td>Talent</td>
+    <td>Talento</td>
+  </tr>
+  <tr>
+    <td>OLD</td>
+    <td>Weight</td>
+    <td></td>
+    <td>פים</td>
+    <td>שקל × 0.66</td>
+    <td>Pim</td>
+    <td>Pim</td>
+  </tr>
+  <tr>
+    <td>NEW</td>
+    <td>Weight</td>
+    <td></td>
+    <td>λιτρα</td>
+    <td>grams × 327</td>
+    <td>Litra</td>
+    <td>Litra</td>
+  </tr>
+  <tr>
+    <td>NEW</td>
+    <td>Weight</td>
+    <td></td>
+    <td>ταλαντιαιος</td>
+    <td>grams × 40000</td>
+    <td>Revelation talent</td>
+    <td>Talento del Apocalipsis</td>
+  </tr>
+</tbody></table>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </div>
   </div>
 </div>

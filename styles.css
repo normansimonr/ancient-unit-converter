@@ -91,6 +91,10 @@ th, td {
   text-align: left;
 }
 
+td {
+  font-family: 'Open Sans', serif;
+}
+
 /* Input and button styles */
 label, input, select, button {
   display: block;
