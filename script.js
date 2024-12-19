@@ -10,15 +10,18 @@ const UNIT_RATIOS = {
     feet: 3.28084,
     cuadras: 0.01
   },
-  weight: {
-    kilograms: 1,
-    grams: 1000,
-    pounds: 2.20462
+  weight: { // Unit is grams
+    kilograms: 1/1000,
+    grams: 1,
+    pounds: 0.00220462,
+    "metric tonnes":9.999988107494002e-7
   },
   capacity: {
     litres: 1,
     millilitres: 1000,
-    gallons: 0.264172
+    gallons: 0.264172,
+    "kilograms of grain": 3/2,
+    "grams of grain": 3/2000,
   }
 };
 
@@ -38,7 +41,6 @@ function generateConversions(referenceValue, category) {
 
 
 // Length always in metres
-
 const CUBIT_IN_METRES = 0.45;
 const FINGER_IN_METRES = CUBIT_IN_METRES/24;
 const HANDBREADTH_IN_METRES = CUBIT_IN_METRES/6;
@@ -78,6 +80,17 @@ const NT_BATH_IN_LITRES = POSTEXILIC_BATH_IN_LITRES;
 const NT_KOR_IN_LITRES = POSTEXILIC_KOR_IN_LITRES;
 const CHOINIX_IN_LITRES = 1;
 const METRITIS_IN_LITRES = NT_BATH_IN_LITRES;
+
+
+// Weight always in grams
+const SHEKEL_IN_GRAMS = 12;
+const GERAH_IN_GRAMS = SHEKEL_IN_GRAMS / 20;
+const BEKAH_IN_GRAMS = SHEKEL_IN_GRAMS / 2;
+const MINA_IN_GRAMS = 60 * SHEKEL_IN_GRAMS;
+const TALENT_IN_GRAMS = 3000 * SHEKEL_IN_GRAMS;
+const PIM_IN_GRAMS = 2 * SHEKEL_IN_GRAMS / 3;
+const LITRA_IN_GRAMS = 327;
+const REVELATION_TALENT_IN_GRAMS = 40 * 1000;
 
 
 // Conversion equivalence table
@@ -243,18 +256,40 @@ const conversionTable = {
   
  
   // Weight
-  
-  
-  talent: {
+
+  "shekel": {
     category: "weight",
-    conversions: {
-      kilograms: 34.3, // For simplicity, this could also be derived from a base weight unit if applicable
-      grams: 34.3 * 1000,
-      pounds: 34.3 * 2.20462
-    }
+    conversions: generateConversions(SHEKEL_IN_GRAMS, "weight")
+  },
+  "beka": {
+    category: "weight",
+    conversions: generateConversions(BEKAH_IN_GRAMS, "weight")
+  },
+  "mina": {
+    category: "weight",
+    conversions: generateConversions(MINA_IN_GRAMS, "weight")
+  },
+  "talent": {
+    category: "weight",
+    conversions: generateConversions(TALENT_IN_GRAMS, "weight")
+  },
+  "pim": {
+    category: "weight",
+    conversions: generateConversions(PIM_IN_GRAMS, "weight")
   },
   
+  
+  "litra": {
+    category: "weight",
+    conversions: generateConversions(LITRA_IN_GRAMS, "weight")
+  },
+  "Revelation's talent": {
+    category: "weight",
+    conversions: generateConversions(REVELATION_TALENT_IN_GRAMS, "weight")
+  },  
 };
+
+
 
 function convert() {
   const inputValue = parseFloat(document.getElementById('input-value').value);

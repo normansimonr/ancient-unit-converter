@@ -1,12 +1,93 @@
+/* General body styles */
 body {
   font-family: 'Bona Nova', serif;
-  text-align: center;
-  margin: 20px;
+  margin: 0;
+  padding: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    yellow 0,
+    yellow 20px,
+    purple 20px,
+    purple 40px
+  );
 }
 
-select {
+/* Layout grid for panels */
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Two rows: one for top panels, one for bottom panel */
+  grid-template-columns: 1fr 1fr; /* Two columns for top panels */
+  height: 100vh;
+  gap: 10px;
+}
+
+/* Top left panel */
+.info-panel {
+  grid-row: 1 / 2; /* First row */
+  grid-column: 1 / 2; /* First column */
+}
+
+/* Top right panel */
+.applet-panel {
+  grid-row: 1 / 2; /* First row */
+  grid-column: 2 / 3; /* Second column */
+}
+
+/* Bottom panel spanning both columns */
+.table-panel {
+  grid-row: 2 / 3; /* Second row */
+  grid-column: 1 / 3; /* Spans across both columns */
+}
+
+/* Panel styles */
+.panel {
+  display: flex;
+  justify-content: center; /* Centre the inner-box horizontally */
+  align-items: center; /* Centre the inner-box vertically */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.0); /* Semi-transparent background */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Subtle border */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  --backdrop-filter: blur(5px); /* Optional blur for frosted glass effect */
+}
+
+/* Inner box styles */
+.inner-box {
+  border: 2px solid rgba(0, 0, 0, 0.3); /* Subtle border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f5f5dc; /* Bone-like background */
+  padding: 20px; /* Padding inside the box */
+  margin: auto; /* Automatically centre */
+  width: 80%; /* Adjust width to fit within the parent */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  text-align: center; /* Centre-align text within the box */
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Input and button styles */
+label, input, select, button {
+  display: block;
+  margin: 10px auto;
+}
+
+input, select {
   font-family: 'Bona Nova', serif;
-  font-size: 1em; /* Adjust font size as needed */
+  font-size: 1em;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -14,33 +95,9 @@ select {
   color: #333;
 }
 
-option {
-  font-family: 'Bona Nova', serif;
-}
-
-input::placeholder {
-  font-family: 'Bona Nova', serif;
-  font-size: 1em; /* Adjust size as needed */
-  color: #888; /* Placeholder text color */
-}
-
-#converter {
-  max-width: 400px;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
-
-label, input, select, button {
-  display: block;
-  margin: 10px auto;
-}
-
 button {
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: purple;
   color: white;
   border: none;
   border-radius: 5px;
@@ -48,9 +105,10 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #007BFF;
 }
 
+/* Result display styles */
 #result {
   margin-top: 20px;
   font-size: 1em;
