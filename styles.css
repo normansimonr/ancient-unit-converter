@@ -1,7 +1,27 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Bona Nova', serif;
   text-align: center;
   margin: 20px;
+}
+
+select {
+  font-family: 'Bona Nova', serif;
+  font-size: 1em; /* Adjust font size as needed */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+option {
+  font-family: 'Bona Nova', serif;
+}
+
+input::placeholder {
+  font-family: 'Bona Nova', serif;
+  font-size: 1em; /* Adjust size as needed */
+  color: #888; /* Placeholder text color */
 }
 
 #converter {

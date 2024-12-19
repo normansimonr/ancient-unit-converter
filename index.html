@@ -5,29 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ancient to Modern Unit Converter</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="converter">
     <h1>Ancient Unit Converter</h1>
-    <label for="input-value">Enter Ancient Unit Value (Hebrew Old Testament, Greek New Testament):</label>
+    <label for="input-value">Enter Ancient Unit Value:</label>
     <input type="number" id="input-value" placeholder="Enter a number">
     <label for="input-unit">Select Ancient Unit:</label>
     <select id="input-unit">
       <!-- Ancient length units -->
-      <option value="cubit">אמה (cubit, codo)</option>
-      <option value="long_cubit">אמה ארוך (long cubit, codo largo)</option>
-      <option value="finger">אצבע (finger, dedo)</option>
-      <option value="cubit_gmd">גמד (cubit, codo) (alternative name)</option>
-      <option value="span">זרת (Span, palmo)</option>
-      <option value="handbreadth">טפח (handbreadth, palmo menor)</option>
-      <option value="reed">קנה (reed, caña)</option>      
-      
-      <option value="shabbath_day">οδοσ σαββατου (sabbath's day walk, camino de un día de reposo)</option>
-      <option value="fathom">οργυια (fathom, braza)</option>
-      <option value="nt_cubit">πηχυς (cubit, codo)</option>
-      <option value="stade">σταδιος (stade, estadio)</option>      
-      <option value="roman_mile">μιλιον (roman mile, milla romana)</option>
-      
+      <optgroup label="Length (OT)">
+        <option value="cubit">אמה — cubit, codo</option>
+        <option value="long cubit">אמה ארוך — long cubit, codo largo</option>
+        <option value="finger">אצבע — finger, dedo</option>
+        <option value="GMD cubit">גמד — cubit, codo (alternative name)</option>
+        <option value="span">זרת — Span, palmo</option>
+        <option value="handbreadth">טפח — handbreadth, palmo menor</option>
+        <option value="reed">קנה — reed, caña</option>      
+      </optgroup>
+      <optgroup label="Length (NT)">  
+        <option value="Shabbath's day walk">οδοσ σαββατου — sabbath's day walk, camino de un sábado</option>
+        <option value="fathom"><strong>οργυια</strong> — fathom, braza</option>
+        <option value="New Testament cubit">πηχυς — cubit, codo</option>
+        <option value="stade">σταδιος — stade, estadio</option>      
+        <option value="Roman mile">μιλιον — roman mile, milla romana</option>
+      </optgroup>
+      <!-- Ancient capacity units -->
+      <optgroup label="Capacity (OT)">
+        <option value="pre-exilic ephah">איפה — pre-exilic ephah, efa preexílica</option>
+        <option value="pre-exilic bath">בת — pre-exilic bath, bat preexílico</option>
+        <option value="post-exilic ephah">איפה — post-exilic ephah, efa postexílica</option>
+        <option value="log">לג — log</option>
+        <option value="kav">קב — kav</option>
+        <option value="omer">עומר — omer</option>
+        <option value="issaron">עשרון — issaron</option>
+        <option value="pre-exilic hin">הין — pre-exilic hin, hin preexílico</option>
+        <option value="post-exilic bath">בת — post-exilic bath, bat postexílico</option>
+        <option value="post-exilic hin">הין — post-exilic hin, hin postexílico</option>
+        <option value="pre-exilic seah">סאה — pre-exilic seah, seah preexílica</option>
+        <option value="post-exilic seah">סאה — post-exilic seah, seah postexílica</option>
+        <option value="double bath"> בת בת — double bath, bat doble</option>
+        <option value="pre-exilic dry homer">חמר — pre-exilic dry homer, homer preexílico áridos</option>
+        <option value="pre-exilic liquid homer">חמר — pre-exilic liquid homer, homer preexílico líquidos</option>
+        <option value="post-exilic homer">חמר — post-exilic homer, homer postexílico</option>
+        <option value="pre-exilic dry kor">כר — pre-exilic dry kor, coro preexílico áridos</option>
+        <option value="pre-exilic liquid kor">כר — pre-exilic liquid kor, coro preexílico líquidos</option>
+        <option value="post-exilic kor">כר — post-exilic kor, coro postexílico</option>
+        <option value="letek">לתך — letek</option>
+      </optgroup>
+      <optgroup label="Capacity (NT)">
+        <option value="New Testament bath">βατος — New Testament bath, bat del Nuevo Testamento</option>
+        <option value="New Testament kor">κορος — New Testament kor, coro del Nuevo Testamento</option>
+        <option value="choinix">χοινιξ — choinix</option>
+        <option value="metritis">μετρητης — metritis</option>
+        <option value="New Testament seah">σατον — New Testament seah, seah del Nuevo Testamento</option>
+      </optgroup>
       <!-- Ancient weight units -->
       <option value="talent">Talent</option>
     </select>
