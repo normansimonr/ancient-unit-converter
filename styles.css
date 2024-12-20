@@ -24,31 +24,30 @@ h2 {
   margin: 10px 0;
 }
 
-/* Layout grid for panels */
 .container {
   display: grid;
-  grid-template-rows: 1fr 1fr; /* Two rows: one for top panels, one for bottom panel */
-  grid-template-columns: 1fr 1fr; /* Two columns for top panels */
+  grid-template-rows: 1fr 1fr 1fr; /* Three rows: top, middle, bottom */
+  grid-template-columns: 1fr; /* Single column for all panels */
   height: 100vh;
   gap: 10px;
 }
 
-/* Top left panel */
+/* Top panel (formerly top left) */
 .info-panel {
   grid-row: 1 / 2; /* First row */
   grid-column: 1 / 2; /* First column */
 }
 
-/* Top right panel */
+/* Middle panel (formerly top right) */
 .applet-panel {
-  grid-row: 1 / 2; /* First row */
-  grid-column: 2 / 3; /* Second column */
+  grid-row: 2 / 3; /* Second row */
+  grid-column: 1 / 2; /* First column */
 }
 
-/* Bottom panel spanning both columns */
+/* Bottom panel */
 .table-panel {
-  grid-row: 2 / 3; /* Second row */
-  grid-column: 1 / 3; /* Spans across both columns */
+  grid-row: 3 / 4; /* Third row */
+  grid-column: 1 / 2; /* First column */
 }
 
 /* Panel styles */

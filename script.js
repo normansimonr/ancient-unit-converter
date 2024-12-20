@@ -21,7 +21,7 @@ const UNIT_RATIOS = {
     millilitres: 1000,
     gallons: 0.264172,
     "kilograms of grain": 3/2,
-    "grams of grain": 3/2000,
+    "grams of grain": 3000/2,
   }
 };
 
