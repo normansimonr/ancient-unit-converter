@@ -5,6 +5,7 @@ const UNIT_RATIOS = {
     kilometers: 0.001,
     meters: 1,
     centimeters: 100,
+    miles: 0.000621371,
     inches: 39.3701,
     yards: 1.09361,
     feet: 3.28084,
@@ -14,7 +15,8 @@ const UNIT_RATIOS = {
     kilograms: 1/1000,
     grams: 1,
     pounds: 0.00220462,
-    "metric tonnes":9.999988107494002e-7
+    "metric tonnes":1/1000000,
+    arroba: 1/12500
   },
   capacity: {
     litres: 1,
@@ -22,6 +24,8 @@ const UNIT_RATIOS = {
     gallons: 0.264172,
     "kilograms of grain": 3/2,
     "grams of grain": 3000/2,
+    "pounds of grain": 2.20462 * 3/2,
+    "arrobas of grain": 3/(2*12.5),
   }
 };
 
