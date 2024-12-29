@@ -15,10 +15,10 @@ const UNIT_RATIOS = {
     kilograms: 1/1000,
     grams: 1,
     pounds: 0.00220462,
-    ounce: 1/28.3495,
-    "troy ounce":1/31.1034768,
+    ounces: 1/28.3495,
+    "troy ounces":1/31.1034768,
     "metric tonnes":1/1000000,
-    arroba: 1/12500
+    arrobas: 1/12500
   },
   capacity: {
     litres: 1,
