@@ -24,10 +24,10 @@ const UNIT_RATIOS = {
     litres: 1,
     millilitres: 1000,
     gallons: 0.264172,
-    "kilograms of grain": 3/2,
-    "grams of grain": 3000/2,
-    "pounds of grain": 2.20462 * 3/2,
-    "arrobas of grain": 3/(2*12.5),
+    "kilograms of grain": 2/3, // Reference unit is kilograms, also below
+    "grams of grain": 1000 * (2/3),
+    "pounds of grain": 2.20462 * (2/3),
+    "arrobas of grain": 12.5 * (2/3),
   }
 };
 

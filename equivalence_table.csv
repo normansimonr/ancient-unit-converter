@@ -36,7 +36,7 @@ NEW,Capacity,,βατος,בת_ב,New Testament bath,Bato del Nuevo Testamento
 NEW,Capacity,,κορος,כר_ב,New Testament kor,Coro del Nuevo Testamento
 NEW,Capacity,,χοινιξ,litres × 1,Choinix,Choinix
 NEW,Capacity,,μετρητης,βατος,Metritis,Metritis
-BOTH,Weight,,Kilograms in one litre (grain),litres × (3/2),,
+BOTH,Weight,,Kilograms in one litre (grain),litres × (2/3),,
 OLD,Weight,,שקל,grams × 12,Shekel,Siclo
 OLD,Weight,,גרה,שקל / 20,Gerah,Gera
 OLD,Weight,,בקע,שקל / 2,Beka,Beka
