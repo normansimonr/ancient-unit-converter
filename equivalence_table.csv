@@ -40,7 +40,7 @@ BOTH,Weight,,Kilograms in one litre (grain),litres × (3/2),,
 OLD,Weight,,שקל,grams × 12,Shekel,Siclo
 OLD,Weight,,גרה,שקל / 20,Gerah,Gera
 OLD,Weight,,בקע,שקל / 2,Beka,Beka
-OLD,Weight,,מנה,שקל × 60,Mina,Mina
+OLD,Weight,,מנה,שקל × 50,Mina,Mina
 OLD,Weight,,ככר,שקל × 3000,Talent,Talento
 OLD,Weight,,פים,שקל × 0.66,Pim,Pim
 NEW,Weight,,λιτρα,grams × 327,Litra,Litra
