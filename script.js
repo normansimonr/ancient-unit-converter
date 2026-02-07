@@ -25,9 +25,9 @@ const UNIT_RATIOS = {
     millilitres: 1000,
     gallons: 0.264172,
     "kilograms of grain": 2/3, // Reference unit is kilograms, also below
-    "grams of grain": 1000 * (2/3),
-    "pounds of grain": 2.20462 * (2/3),
-    "arrobas of grain": 12.5 * (2/3),
+    "grams of grain": 1000 * (2/3), // 1Kg is equal to 1000 grams
+    "pounds of grain": 2.20462 * (2/3), // 1Kg is equal to 2.20462 pounds
+    "arrobas of grain": (1/12.5) * (2/3), // 1Kg is equal to 1/12.5 arrobas
   }
 };
 
