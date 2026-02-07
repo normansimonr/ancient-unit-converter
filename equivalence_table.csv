@@ -1,47 +1,48 @@
-Testament,Unit type,Period,Unit name (+ identifiers),Formula,English,Spanish
-OLD,Length,,אמה,0.45 × metres,Cubit,Codo
-OLD,Length,,אצבע,אמה / 24,Finger,Dedo
-OLD,Length,,טפח,אמה / 6,Handbreadth,Palmo menor
-OLD,Length,,זרת,אמה / 2,Span,Palmo
-OLD,Length,,אמה_ארוך,7 × טפח,Long cubit,Codo largo
-OLD,Length,,קנה,אמה_ארוך × 6,Reed,Caña
-OLD,Length,,גמד,אמה,Cubit (alternative name),Codo (nombre alternativo)
-NEW,Length,,πηχυς,אמה_ארוך,New Testament cubit,Codo del Nuevo Testamento
-NEW,Length,,οργυια,1.8 × metres,Fathom,Braza
-NEW,Length,,σταδιος,185 × metres,Stade,Estadio
-NEW,Length,,οδοσ_σαββατου,200 × πηχυς,Shabbath’s day walk,Camino de un día de reposo
-NEW,Length,,μιλιον,1497 × metres,Roman_mile,Milla romana
-OLD,Capacity,Pre-exilic,איפה_א,litres × 10,Ephah,Efa
-OLD,Capacity,Pre-exilic,בת_א,litres × 22,Bath,Bato
-OLD,Capacity,Post-exilic,איפה_ב,litres × 39,Ephah,Efa
-OLD,Capacity,,לג,בת_א / 72,Log,Log
-OLD,Capacity,,קב,איפה_א / 18,Kav,Kav
-OLD,Capacity,,עומר,איפה_א / 10,Omer,Omer
-OLD,Capacity,,עשרון,עומר,Issaron,Isaron
-OLD,Capacity,Pre-exilic,הין_א,בת_א / 6,Hin,Hin
-OLD,Capacity,Post-exilic,בת_ב,איפה_ב,Bath,Bato
-OLD,Capacity,Post-exilic,הין_ב,בת_ב / 6,Hin,Hin
-OLD,Capacity,Pre-exilic,סאה_א,איפה_א / 3,Seah,Seah
-OLD,Capacity,Post-exilic,סאה_ב,איפה_ב / 3,Seah,Seah
-OLD,Capacity,,בת_בת,litres × 39,Double bath,Doble bato
-OLD,Capacity (dry),Pre-exilic,חמר_א_א,10 × איפה_א,Homer,Homer
-OLD,Capacity (liquid),Pre-exilic,חמר_א_ב,10 × בת_א,Homer,Homer
-OLD,Capacity,Post-exilic,חמר_ב,10 × איפה_ב,Homer,Homer
-OLD,Capacity (dry),Pre-exilic,כר_א_א,חמר_א_א,Kor,Coro
-OLD,Capacity (liquid),Pre-exilic,כר_א_ב,חמר_א_ב,Kor,Coro
-OLD,Capacity,Post-exilic,כר_ב,חמר_ב,Kor,Coro
-OLD,Capacity,,לתך,חמר_א_א / 2,Letek,Letek
-NEW,Capacity,,σατον,סאה_ב,New Testament seah,Seah del Nuevo Testamento
-NEW,Capacity,,βατος,בת_ב,New Testament bath,Bato del Nuevo Testamento
-NEW,Capacity,,κορος,כר_ב,New Testament kor,Coro del Nuevo Testamento
-NEW,Capacity,,χοινιξ,litres × 1,Choinix,Choinix
-NEW,Capacity,,μετρητης,βατος,Metritis,Metritis
-BOTH,Weight,,Kilograms in one litre (grain),litres × (2/3),,
-OLD,Weight,,שקל,grams × 12,Shekel,Siclo
-OLD,Weight,,גרה,שקל / 20,Gerah,Gera
-OLD,Weight,,בקע,שקל / 2,Beka,Beka
-OLD,Weight,,מנה,שקל × 50,Mina,Mina
-OLD,Weight,,ככר,שקל × 3000,Talent,Talento
-OLD,Weight,,פים,שקל × 0.66,Pim,Pim
-NEW,Weight,,λιτρα,grams × 327,Litra,Litra
-NEW,Weight,,ταλαντιαιος,grams × 40000,Revelation talent,Talento del Apocalipsis
+Testament,Unit type,Period,Unit name (+ identifiers),Formula,English,Spanish,Comments
+OLD,Length,,אמה,0.45 × metres,Cubit,Codo,"Schmidt's suggestion: Round up to 0.5m for simplified calculation"
+OLD,Length,,אצבע,אמה / 24,Finger,Dedo,
+OLD,Length,,טפח,אמה / 6,Handbreadth,Palmo menor,
+OLD,Length,,זרת,אמה / 2,Span,Palmo,
+OLD,Length,,אמה_ארוך,7 × טפח,Long cubit,Codo largo,
+OLD,Length,,קנה,אמה_ארוך × 6,Reed,Caña,
+OLD,Length,,גמד,אמה,Cubit (alternative name),Codo (nombre alternativo),
+NEW,Length,,πηχυς,אמה_ארוך,New Testament cubit,Codo del Nuevo Testamento,
+NEW,Length,,οργυια,1.8 × metres,Fathom,Braza,
+NEW,Length,,σταδιος,185 × metres,Stade,Estadio,
+NEW,Length,,οδοσ_σαββατου,200 × πηχυς,Shabbath’s day walk,Camino de un día de reposo,
+NEW,Length,,μιλιον,1497 × metres,Roman_mile,Milla romana,
+OLD,Capacity,Pre-exilic,איפה_א,litres × 10,Ephah,Efa,
+OLD,Capacity,Pre-exilic,בת_א,litres × 22,Bath,Bato,
+OLD,Capacity,Post-exilic,איפה_ב,litres × 39,Ephah,Efa,
+OLD,Capacity,,לג,בת_א / 72,Log,Log,
+OLD,Capacity,,קב,איפה_א / 18,Kav,Kav,
+OLD,Capacity,,עומר,איפה_א / 10,Omer,Omer,
+OLD,Capacity,,עשרון,עומר,Issaron,Isaron,
+OLD,Capacity,Pre-exilic,הין_א,בת_א / 6,Hin,Hin,"Schmidt's suggestion: Round to 4L (maths value is ~3.66L)"
+OLD,Capacity,Post-exilic,בת_ב,איפה_ב,Bath,Bato,
+OLD,Capacity,Post-exilic,הין_ב,בת_ב / 6,Hin,Hin,
+OLD,Capacity,Pre-exilic,סאה_א,איפה_א / 3,Seah,Seah,
+OLD,Capacity,Post-exilic,סאה_ב,איפה_ב / 3,Seah,Seah,
+OLD,Capacity,,בת_בת,litres × 39,Double bath,Doble bato,
+OLD,Capacity (dry),Pre-exilic,חמר_א_א,10 × איפה_א,Homer,Homer,
+OLD,Capacity (liquid),Pre-exilic,חמר_א_ב,10 × בת_א,Homer,Homer,
+OLD,Capacity,Post-exilic,חמר_ב,10 × איפה_ב,Homer,Homer,
+OLD,Capacity (dry),Pre-exilic,כר_א_א,חמר_א_א,Kor,Coro,
+OLD,Capacity (liquid),Pre-exilic,כר_א_ב,חמר_א_ב,Kor,Coro,
+OLD,Capacity,Post-exilic,כר_ב,חמר_ב,Kor,Coro,
+OLD,Capacity,,לתך,חמר_א_א / 2,Letek,Letek,
+NEW,Capacity,,σατον,סאה_ב,New Testament seah,Seah del Nuevo Testamento,
+NEW,Capacity,,βατος,בת_ב,New Testament bath,Bato del Nuevo Testamento,
+NEW,Capacity,,κορος,כר_ב,New Testament kor,Coro del Nuevo Testamento,
+NEW,Capacity,,χοινιξ,litres × 1,Choinix,Choinix,
+NEW,Capacity,,μετρητης,βατος,Metritis,Metritis,
+BOTH,Weight,,Kilograms in one litre (grain),litres × (2/3),,,
+BOTH,Weight,,Kilograms in one litre (flour),litres × 0.5,,,"Schmidt's suggestion: Flour is lighter than grain (0.5 kg/L)"
+OLD,Weight,,שקל,grams × 12,Shekel,Siclo,
+OLD,Weight,,גרה,שקל / 20,Gerah,Gera,
+OLD,Weight,,בקע,שקל / 2,Beka,Beka,
+OLD,Weight,,מנה,שקל × 50,Mina,Mina,
+OLD,Weight,,ככר,שקל × 3000,Talent,Talento,"Schmidt's suggestion: Round to 35kg (maths value is 36kg)"
+OLD,Weight,,פים,שקל × 0.66,Pim,Pim,
+NEW,Weight,,λιτρα,grams × 327,Litra,Litra,
+NEW,Weight,,ταλαντιαιος,grams × 40000,Revelation talent,Talento del Apocalipsis,

@@ -24,10 +24,16 @@ const UNIT_RATIOS = {
     litres: 1,
     millilitres: 1000,
     gallons: 0.264172,
+    // GRAIN
     "kilograms of grain": 2/3, // Reference unit is kilograms, also below
     "grams of grain": 1000 * (2/3), // 1Kg is equal to 1000 grams
     "pounds of grain": 2.20462 * (2/3), // 1Kg is equal to 2.20462 pounds
     "arrobas of grain": (1/12.5) * (2/3), // 1Kg is equal to 1/12.5 arrobas
+    // FLOUR
+    "kilograms of flour": 0.5, // Half a kilogram in a litre
+    "grams of flour": 1000 * 0.5,
+    "pounds of flour": 2.20462 * 0.5,
+    "arrobas of flour": (1/12.5) * 0.5,
   }
 };
 
@@ -47,7 +53,7 @@ function generateConversions(referenceValue, category) {
 
 
 // Length always in metres
-const CUBIT_IN_METRES = 0.45;
+const CUBIT_IN_METRES = 0.5;
 const FINGER_IN_METRES = CUBIT_IN_METRES/24;
 const HANDBREADTH_IN_METRES = CUBIT_IN_METRES/6;
 const SPAN_IN_METRES = CUBIT_IN_METRES/2;
@@ -68,7 +74,7 @@ const LOG_IN_LITRES = PREEXILIC_BATH_IN_LITRES / 72;
 const KAV_IN_LITRES = PREEXILIC_EPHAH_IN_LITRES / 18;
 const OMER_IN_LITRES = PREEXILIC_EPHAH_IN_LITRES / 10;
 const ISSARON_IN_LITRES = OMER_IN_LITRES;
-const PREEXILIC_HIN_IN_LITRES = PREEXILIC_BATH_IN_LITRES / 6;
+const PREEXILIC_HIN_IN_LITRES = 4;
 const POSTEXILIC_BATH_IN_LITRES = POSTEXILIC_EPHAH_IN_LITRES;
 const POSTEXILIC_HIN_IN_LITRES = POSTEXILIC_BATH_IN_LITRES / 6;
 const PREEXILIC_SEAH_IN_LITRES = PREEXILIC_EPHAH_IN_LITRES / 3;
@@ -93,7 +99,7 @@ const SHEKEL_IN_GRAMS = 12;
 const GERAH_IN_GRAMS = SHEKEL_IN_GRAMS / 20;
 const BEKAH_IN_GRAMS = SHEKEL_IN_GRAMS / 2;
 const MINA_IN_GRAMS = 50 * SHEKEL_IN_GRAMS;
-const TALENT_IN_GRAMS = 3000 * SHEKEL_IN_GRAMS;
+const TALENT_IN_GRAMS = 35000;
 const PIM_IN_GRAMS = 2 * SHEKEL_IN_GRAMS / 3;
 const LITRA_IN_GRAMS = 327;
 const REVELATION_TALENT_IN_GRAMS = 40 * 1000;
